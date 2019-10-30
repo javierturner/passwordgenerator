@@ -16,27 +16,42 @@
         <div class="row">
             <div class="col-md-12">
                 <br>
-                <h1>Password Generator</h1>
-                <div class="col-md-9">
-                    <h2>Generate a Password</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-10">
+                <h1 style="text-align: center">Password Generator</h1>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 border rounded border-info">
+                        <br>
+                        <h2>Generate a Password</h2>
+                        <hr>
+                        <div class="row">
+                            <!-- <div class="col-md-3"></div> -->
+                            <div class="col-md-8 border rounded">
+                                <div class="body-text">
+
+                                        <br>
+                                        <div class="form-group shadow-textarea">
+                                                <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
+                                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+                                              </div>
 
 
-                            <script>
+                                        <script>
 
-                                function generate_random_string(string_length) {
-                                    let random_string = '';
-                                    let random_ascii;
-                                    for (let i = 0; i < string_length; i++) {
-                                        random_ascii = Math.floor((Math.random() * 25) + 97);
-                                        random_string += String.fromCharCode(random_ascii)
-                                    }
-                                    return random_string
-                                }
+                                            prompt("How many characters would you like in your password?")
+                                            // random letter generator 
+                                            function generare_random_string(string_length) {
+                                                random_string = '';
+                                                random_ascii;
+                                                for (i = 0; i < string_length; i++) {
+                                                    random_ascii = Math.floor((Math.random() * 25) + 97);
+                                                    random_string += String.fromCharCode(random_ascii)
+                                                }
+                                                return random_string
+                                            }
+                                            // logging random letter
+                                            console.log(generate_random_string(5))
 
-                                console.log(generate_random_string(5))
+                                            document.getElementById(generate_random_string).innerHTML
 
 
 
@@ -44,21 +59,28 @@
 
 
 
-                            </script>
+
+
+                                        </script>
+
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3"></div> -->
                         </div>
+
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                            crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                            crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                            crossorigin="anonymous"></script>
                     </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
-
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
         </div>
     </div>
 
