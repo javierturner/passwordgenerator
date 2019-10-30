@@ -1,5 +1,12 @@
+.col-md-6 {
+    padding: 50px;
+    margin: 0 auto;
+    width: 100px;
+}
+
 .col-md-8 {
     border-style: dashed !important;
     border-color: red !important;
     height: 200px;
+    margin: auto;
 }

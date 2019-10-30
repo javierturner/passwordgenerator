@@ -12,14 +12,14 @@
 
 <body style="background-image:url(assets/images/atmosphere-background-bright-19670.jpg)">
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" >
                 <br>
                 <h1 style="text-align: center">Password Generator</h1>
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-md-6 border rounded border-info">
+                    <div class="col-md-6 border rounded border-info" style="background-color: #ffffff">
                         <br>
                         <h2>Generate a Password</h2>
                         <hr>
@@ -28,40 +28,43 @@
                             <div class="col-md-8 border rounded">
                                 <div class="body-text">
 
-                                        <br>
-                                        <div class="form-group shadow-textarea">
-                                                <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
-                                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
-                                              </div>
+                                    <br>
+                                    <div class="form-group shadow-textarea">
+                                        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6"
+                                            rows="3" placeholder="Your secure placeholder"></textarea>
+                                    </div>
+
+                                    <button type="button" class="genPass">Generate Password</button>
+                                    <button type="button" class="copy">Copy to Clipboard</button>
 
 
-                                        <script>
+                                    <script>
 
-                                            prompt("How many characters would you like in your password?")
-                                            // random letter generator 
-                                            function generare_random_string(string_length) {
-                                                random_string = '';
-                                                random_ascii;
-                                                for (i = 0; i < string_length; i++) {
-                                                    random_ascii = Math.floor((Math.random() * 25) + 97);
-                                                    random_string += String.fromCharCode(random_ascii)
-                                                }
-                                                return random_string
+                                        prompt("How many characters would you like in your password?")
+                                        // random letter generator 
+                                        function generare_random_string(string_length) {
+                                            random_string = '';
+                                            random_ascii;
+                                            for (i = 0; i < string_length; i++) {
+                                                random_ascii = Math.floor((Math.random() * 25) + 97);
+                                                random_string += String.fromCharCode(random_ascii)
                                             }
-                                            // logging random letter
-                                            console.log(generate_random_string(5))
+                                            return random_string
+                                        }
+                                        // logging random letter
+                                        console.log(generate_random_string(5))
 
-                                            document.getElementById(generate_random_string).innerHTML
-
-
-
-
+                                        document.getElementById(generate_random_string).innerHTML
 
 
 
 
 
-                                        </script>
+
+
+
+
+                                    </script>
 
                                 </div>
                             </div>
