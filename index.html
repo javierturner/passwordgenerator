@@ -52,7 +52,7 @@
                                         //generate password function and defining those strings
                                         function generate() {
                                             var charOptions = "";
-                                            number = "1234567890";
+                                            numbers = "1234567890";
                                             special = "~!@#$%^&*()_+<>/{}[]?"
                                             lower = "abcdefghijklmnopqrstuvwxyz";
                                             upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -61,7 +61,7 @@
                                         //variable for total options selected
                                         var optionsChose = 0;
 
-
+                                        //how many characters?
                                         var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
 
                                         if (howLong > 7 && howLong < 129) {
@@ -70,24 +70,43 @@
 
                                         else {
                                             alert("Please enter between 8 and 128 characters")
-                                            
+
                                             prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)");
                                         }
 
-
+                                        //include numbers?
                                         var numInc = confirm("Would you like to include numbers?");
 
                                         //if they select okay, then add this to the character length
                                         if (numInc == true) {
                                             optionsChose = optionsChose + 1;
                                             choices.pwNums = true;
-                                            choices + number;
+                                            choices += numbers;
                                         }
 
                                         else {
                                             coices.pwNums = false;
                                         }
-                                        
+
+
+                                        //include special characters?
+                                        var specInc = confirm("Would you like to include special characters");
+
+                                        //if they select okay, then add this
+                                        if (specInc == true) {
+                                            optionsChose = optionsChose + 1;
+                                            choices.pwSpec = true;
+                                            choices += special;
+                                        }
+
+                                        else {
+                                            coices.pwSpec = false;
+                                        }
+
+                                        console.log(choices+=special)
+
+
+
 
 
 
