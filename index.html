@@ -61,9 +61,17 @@
                                         //variable for total options selected
                                         var optionsChose = 0;
 
-                                        
-                                        var howLong = prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)")
 
+                                        var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
+
+                                        if (howLong > 8 && howLong < 128) {
+                                            choices.pwLength = howLong;
+                                        }
+
+                                        else {
+                                            alert("Please enter between 8 and 128 characters");
+
+                                        }
 
 
 
