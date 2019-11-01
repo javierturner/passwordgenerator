@@ -2,27 +2,92 @@
     padding: 50px;
     margin: 0 auto;
     width: 100px;
+    background-color: #DEF7DB;
+    border-color: #364652 !important;
 }
 
 .col-md-8 {
     border-style: dashed !important;
-    border-color: #8d8c8c !important;
-    height: 200px;
+    border-color: #364652 !important;
+    height: auto;
     margin: auto;
+    padding: 15px;
 }
 
 .genPass {
-    color: white !important;
-    background-color: #8d8c8c !important;
+    color:  #C7DBE6 !important;
+    background-color: #282A30 !important;
     float: left;
+    padding: 7px;
+    margin: 10px;
 }
 
 .copy {
-    color: white !important;
-    background-color: #8d8c8c !important;
+    color: #C7DBE6 !important;
+    background-color: #282A30 !important;
     float: right;
+    padding: 7px;
+    margin: 10px;
 }
 
-.background {
-    
+h1 {
+    color:  #DEF7DB;
 }
+
+h2 {
+    color: #364652;
+
+}
+
+hr {
+    border-color: #364652;
+
+}
+
+body {
+    background-image: url(images/background-black-colors-952670.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #DEF7DB;
+}
+
+textarea.formcontrol {
+    color: #A2C3A4;
+}
+
+.body-text {
+    border-color: #364652;
+}
+
+.genPass:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.copy:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+
+/* Media Queries*/
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-image: url(iimages/background-black-colors-952670.jpg);
+    }
+
+    .genPass {
+        float: left;
+    }
+
+    .copy {
+        float: left;
+    }
+
+
+
+
+  }

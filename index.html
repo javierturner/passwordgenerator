@@ -10,28 +10,27 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 
-<body class="background" style="background-image:url(assets/images/4k-wallpaper-clouds-dawn-1261728.jpg)">
+<body>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 mx-auto">
                 <br>
                 <h1 style="text-align: center">Password Generator</h1>
                 <br>
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-md-6 border rounded border-info" style="background-color: #f1b1a9">
+                    <div class="col-md-6 border rounded border-info">
                         <h2>Generate a Password</h2>
                         <hr>
                         <div class="row">
-                            <!-- <div class="col-md-3"></div> -->
                             <div class="col-md-8 border rounded">
                                 <div class="body-text">
 
                                     <br>
                                     <div class="form-group shadow-textarea">
                                         <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6"
-                                            rows="3" placeholder="Your secure placeholder"></textarea>
+                                            rows="3" placeholder="Your secure password"></textarea>
                                     </div>
 
 
@@ -41,22 +40,19 @@
 
                                     <script>
 
-                                        // how many characters variable/prompt
-                                        var charLength = prompt("How many characters would you like in your password?")
-                                        console.log(charLength)
-
-                                        // random letter generator 
-                                        function generate_random_string(string_length) {
-                                            let random_string = '';
-                                            let random_ascii;
-                                            for (let i = 0; i < string_length; i++) {
-                                                random_ascii = Math.floor((Math.random() * 25) + 97);
-                                                random_string += String.fromCharCode(random_ascii)
-                                            }
-                                            return random_string
+                                        //define variables
+                                        var choices = {
+                                            pwLength: 0;
+                                            pwNums: true;
+                                            pwSpec: true;
+                                            pwUpper: true;
+                                            pwLower: true;
                                         }
 
-                                        console.log(generate_random_string(charLength))
+                                        //generate password function
+                                        function generate = "";
+                                        lower = "abcdefghijklmnopqrstuvwxyz";
+                                        upper = ""
 
 
 
@@ -70,7 +66,6 @@
 
                                 </div>
                             </div>
-                            <!-- <div class="col-md-3"></div> -->
                         </div>
 
                         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -92,3 +87,18 @@
 </body>
 
 </html>
+
+
+
+// how many characters variable/prompt
+var charLength = prompt("How many characters would you like in your password?")
+console.log(charLength)
+
+// random letter generator
+function generate_random_characters(string_length) {
+let random_string = '';
+let random_ascii;
+for (let i = 0; i < string_length; i++) { random_ascii=Math.floor((Math.random() * 25) + 97); random_string
+    +=String.fromCharCode(random_ascii) } return random_string }
+    console.log(generate_random_characters(charLength)) //special characters? var specChar=confirm("Would you like to
+    include special characters?") console.log(specChar) if (specChar==true) { function generate_special_characters () }

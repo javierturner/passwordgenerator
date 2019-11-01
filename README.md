@@ -29,6 +29,7 @@ The purpose of this website is so show I understand the basics of Bootstrap, and
 ##Credits
 
 https://codehandbook.org/generate-random-string-characters-in-javascript/
+https://www.w3schools.com/css/css_image_transparency.asp
 
 
 
