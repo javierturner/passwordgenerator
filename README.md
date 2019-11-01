@@ -8,28 +8,14 @@ There is no installation required for this project.
 
 ##Usage
 
-
-
-
-##Credits
-
-# JT Turner's Portfolio
-
-
-##Installation
-
-There is no installation required for this project.
-
-
-##Usage
-
-The purpose of this website is so show I understand the basics of Bootstrap, and employers can view my portfolio and learn a little about me.
+The purpose of this was to demonstrate my understanding of basic javascript alerts and functions, all while making a functioning website.
 
 
 ##Credits
 
-https://codehandbook.org/generate-random-string-characters-in-javascript/
-https://www.w3schools.com/css/css_image_transparency.asp
+° Sharon Yelverton was a massive help; she helped explain the thought process I should take when appraching this code
+° https://www.w3schools.com/css/css_image_transparency.asp
+° https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 
 
 

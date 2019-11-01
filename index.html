@@ -53,7 +53,7 @@
                                         function generate() {
                                             var charOptions = "";
                                             number = "1234567890";
-                                            special = "~!@#$%^&*()_+<>/\{}[]?"
+                                            special = "~!@#$%^&*()_+<>/{}[]?"
                                             lower = "abcdefghijklmnopqrstuvwxyz";
                                             upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
                                         }
@@ -64,14 +64,25 @@
 
                                         var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
 
-                                        if (howLong > 8 && howLong < 128) {
+                                        if (howLong > 7 && howLong < 129) {
                                             choices.pwLength = howLong;
                                         }
 
                                         else {
-                                            alert("Please enter between 8 and 128 characters");
-
+                                            alert("Please enter between 8 and 128 characters")
+                                            
+                                            //need to somehow get howLong to prompt again
                                         }
+
+
+                                        var numInc = confirm("Would you like to include numbers?");
+
+                                        //if they select okay, then add this to the character length
+                                        if (numInc == true) {
+                                            optionsChose = optionsChose + 1;
+                                            choices.pwNums = true;
+                                        }
+                                        
 
 
 
@@ -103,18 +114,3 @@
 </body>
 
 </html>
-
-
-
-// how many characters variable/prompt
-var charLength = prompt("How many characters would you like in your password?")
-console.log(charLength)
-
-// random letter generator
-function generate_random_characters(string_length) {
-let random_string = '';
-let random_ascii;
-for (let i = 0; i < string_length; i++) { random_ascii=Math.floor((Math.random() * 25) + 97); random_string
-    +=String.fromCharCode(random_ascii) } return random_string }
-    console.log(generate_random_characters(charLength)) //special characters? var specChar=confirm("Would you like to
-    include special characters?") console.log(specChar) if (specChar==true) { function generate_special_characters () }
