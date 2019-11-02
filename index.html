@@ -40,70 +40,87 @@
 
                                     <script>
 
-                                        //define variables for password
-                                        var choices = {
-                                            pwLength: 0,
-                                            pwNums: true,
-                                            pwSpec: true,
-                                            pwUpper: true,
-                                            pwLower: true,
-                                        }
-
+                                        // //define variables for password
+                                        // var choices = {
+                                        //     pwLength: 0,
+                                        //     pwNums: true,
+                                        //     pwSpec: true,
+                                        //     pwUpper: true,
+                                        //     pwLower: true,
+                                        // }
                                         //generate password function and defining those strings
-                                        function generate() {
-                                            var charOptions = "";
-                                            numbers = "1234567890";
-                                            special = "~!@#$%^&*()_+<>/{}[]?"
-                                            lower = "abcdefghijklmnopqrstuvwxyz";
-                                            upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                                        }
 
-                                        //variable for total options selected
-                                        var optionsChose = 0;
+                                            var choice = "";
+                                            var numbers = "1234567890";
+                                            var special = "~!@#$%^&*()_+<>/{}[]?";
+                                            var lower = "abcdefghijklmnopqrstuvwxyz";
+                                            var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 
                                         //how many characters?
                                         var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
 
-                                        if (howLong > 7 && howLong < 129) {
-                                            choices.pwLength = howLong;
+                                        if (howLong >= 8 || howLong <= 128) {
+                                        
+                                           
+                                            var incNum = confirm("Would you like to include numbers?");
+                                            if (incNum === true) {
+                                                choice += numbers
+                                            }
+                                            console.log(choice)
+
+                                            var incSpec = confirm("Would you like to include special characters?");
+                                            if (incSpec === true) {
+                                                choice += special
+                                            }
+                                            console.log(choice)
+
+                                            var incLow = confirm("Would you like to include lower case characters?");
+                                            if (incLow === true) {
+                                                choice += lower
+                                            }
+                                            console.log(choice)
+
+                                            var incUp = confirm("Would you like to include upper case characters?");
+                                            if (incUp === true) {
+                                                choice += upper
+                                            }
+                                            console.log(choice)
+
+                                        
                                         }
 
-                                        else {
-                                            alert("Please enter between 8 and 128 characters")
 
-                                            prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)");
-                                        }
+                                        // else (howLong <= 8 || howLong >= 128); {
+                                        //     prompt("You must enter a number between 8 and 128");
+                                        // }
 
-                                        //include numbers?
-                                        var numInc = confirm("Would you like to include numbers?");
-
-                                        //if they select okay, then add this to the character length
-                                        if (numInc == true) {
-                                            optionsChose = optionsChose + 1;
-                                            choices.pwNums = true;
-                                            choices += numbers;
-                                        }
-
-                                        else {
-                                            coices.pwNums = false;
-                                        }
+                                            var answer = "";
+                                            for(i = 1; i < howLong; i++){
+                                            answer = answer + choice.charAt(Math.floor(Math.random() * Math.floor(choice.length - 1)))
+                                            }
 
 
-                                        //include special characters?
-                                        var specInc = confirm("Would you like to include special characters");
+                                            console.log(answer)
+                                        
 
-                                        //if they select okay, then add this
-                                        if (specInc == true) {
-                                            optionsChose = optionsChose + 1;
-                                            choices.pwSpec = true;
-                                            choices += special;
-                                        }
 
-                                        else {
-                                            coices.pwSpec = false;
-                                        }
 
-                                        console.log(choices+=special)
+//    function generatePwd() {
+//        var password = "";
+//        for (i = 1; i <= pwdLength; i++) {
+//            password += Char.charAt(Math.floor(Math.random() * (Char.length)));
+//        }
+//        // add password the generate button
+//        document.getElementById("displayPwd").value = password;
+//    }
+//    // Function copy password
+//    function copyFunction() {
+//        document.getElementById("displayPwd").select();
+//        document.execCommand("copy");
+// //    }
+
+                                        
 
 
 
