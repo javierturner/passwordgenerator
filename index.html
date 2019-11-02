@@ -35,12 +35,12 @@
 
 
                                     <button type="button" onClick="generate()" class="genPass rounded">Generate Password</button>
-                                    <button type="button" class="copy rounded">Copy to Clipboard</button>
+                                    <button type="button" onClick="copyPassword()" class="copy rounded">Copy to Clipboard</button>
 
 
                                     <script>
 
-                                        // //define variables for password
+                                        //define variables for password
 
                                         var choice = "";
                                         var numbers = "1234567890";
@@ -51,10 +51,11 @@
 
                                         //how many characters?
                                         var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
+                                        
+                                        //if length is between 8 and 128, move on to next questions
+                                        if (howLong >= 8 && howLong <= 128) {
 
-                                        if (howLong >= 8 || howLong <= 128) {
-
-
+                                            //want any of these options, then add strings to the empty choice container
                                             var incNum = confirm("Would you like to include numbers?");
                                             if (incNum === true) {
                                                 choice += numbers
@@ -82,10 +83,12 @@
 
                                         }
 
+                                        else {confirm("You must enter a number between 8 and 128!")
+                                            document.location.reload()
+                                        
+                                        }
 
-                                        // else (howLong <= 8 || howLong >= 128); {
-                                        //     prompt("You must enter a number between 8 and 128");
-                                        // }
+
                                         function generate() {
                                             var answer = "";
                                             for (i = 1; i < howLong; i++) {
@@ -100,32 +103,14 @@
 
                                         }
 
+                                        function copyPassword(){
+                                            document.getElementById("textbox").select();
 
+                                            document.execCommand("Copy");
 
+                                            alert("Your new password has been copied!");
 
-//    function generatePwd() {
-//        var password = "";
-//        for (i = 1; i <= pwdLength; i++) {
-//            password += Char.charAt(Math.floor(Math.random() * (Char.length)));
-//        }
-//        // add password the generate button
-//        document.getElementById("displayPwd").value = password;
-//    }
-//    // Function copy password
-//    function copyFunction() {
-//        document.getElementById("displayPwd").select();
-//        document.execCommand("copy");
-// //    }
-
-
-
-
-
-
-
-
-
-
+                                        }
 
                                     </script>
 
