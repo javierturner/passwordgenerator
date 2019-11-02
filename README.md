@@ -20,7 +20,7 @@ The purpose of this was to demonstrate my understanding of basic javascript aler
 
 ##Screenshots of completed application
 
-![iPad_passwordgenerator](assets/images/iPad_passwordgenerator.jpg)
+![iPad_passwordgenerator](assets/images/iPad_passwordgenerator.png)
 
 
 
