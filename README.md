@@ -1,8 +1,8 @@
 # JT Turner's Password Generator README
 
 ##Links to deployed application
-Github Pages: 
-Deployed Application: 
+Github Pages: https://github.com/javierturner/passwordgenerator
+Deployed Application: https://javierturner.github.io/passwordgenerator/index.html
 
 
 ##Installation
