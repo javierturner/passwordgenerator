@@ -29,7 +29,7 @@
 
                                     <br>
                                     <div class="form-group shadow-textarea">
-                                        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6"
+                                        <textarea class="form-control z-depth-1" id="textbox"
                                             rows="3" placeholder="Your secure password"></textarea>
                                     </div>
 
@@ -41,14 +41,6 @@
                                     <script>
 
                                         // //define variables for password
-                                        // var choices = {
-                                        //     pwLength: 0,
-                                        //     pwNums: true,
-                                        //     pwSpec: true,
-                                        //     pwUpper: true,
-                                        //     pwLower: true,
-                                        // }
-                                        //generate password function and defining those strings
 
                                             var choice = "";
                                             var numbers = "1234567890";
@@ -102,6 +94,11 @@
 
 
                                             console.log(answer)
+
+                                            // add password to text area
+                                            document.getElementById("textbox").value = answer;
+
+                                            
                                         
 
 
