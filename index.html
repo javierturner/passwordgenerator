@@ -29,12 +29,12 @@
 
                                     <br>
                                     <div class="form-group shadow-textarea">
-                                        <textarea class="form-control z-depth-1" id="textbox"
-                                            rows="3" placeholder="Your secure password"></textarea>
+                                        <textarea class="form-control z-depth-1" id="textbox" rows="3"
+                                            placeholder="Your secure password"></textarea>
                                     </div>
 
 
-                                    <button type="button" class="genPass rounded">Generate Password</button>
+                                    <button type="button" onClick="generate()" class="genPass rounded">Generate Password</button>
                                     <button type="button" class="copy rounded">Copy to Clipboard</button>
 
 
@@ -42,19 +42,19 @@
 
                                         // //define variables for password
 
-                                            var choice = "";
-                                            var numbers = "1234567890";
-                                            var special = "~!@#$%^&*()_+<>/{}[]?";
-                                            var lower = "abcdefghijklmnopqrstuvwxyz";
-                                            var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                                        var choice = "";
+                                        var numbers = "1234567890";
+                                        var special = "~!@#$%^&*()_+<>/{}[]?";
+                                        var lower = "abcdefghijklmnopqrstuvwxyz";
+                                        var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
                                         //how many characters?
                                         var howLong = parseInt(prompt("How many characters would you like in your password? (Must be between 8 and 128 characters)"));
 
                                         if (howLong >= 8 || howLong <= 128) {
-                                        
-                                           
+
+
                                             var incNum = confirm("Would you like to include numbers?");
                                             if (incNum === true) {
                                                 choice += numbers
@@ -79,17 +79,17 @@
                                             }
                                             console.log(choice)
 
-                                        
+
                                         }
 
 
                                         // else (howLong <= 8 || howLong >= 128); {
                                         //     prompt("You must enter a number between 8 and 128");
                                         // }
-
+                                        function generate() {
                                             var answer = "";
-                                            for(i = 1; i < howLong; i++){
-                                            answer = answer + choice.charAt(Math.floor(Math.random() * Math.floor(choice.length - 1)))
+                                            for (i = 1; i < howLong; i++) {
+                                                answer = answer + choice.charAt(Math.floor(Math.random() * Math.floor(choice.length - 1)))
                                             }
 
 
@@ -98,8 +98,8 @@
                                             // add password to text area
                                             document.getElementById("textbox").value = answer;
 
-                                            
-                                        
+                                        }
+
 
 
 
@@ -117,7 +117,7 @@
 //        document.execCommand("copy");
 // //    }
 
-                                        
+
 
 
 
