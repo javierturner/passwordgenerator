@@ -8,14 +8,19 @@ There is no installation required for this project.
 
 ##Usage
 
-The purpose of this was to demonstrate my understanding of basic javascript alerts and functions, all while making a functioning website.
+The purpose of this was to demonstrate my understanding of basic javascript alerts and functions, all while making a functioning and responsive website.
 
 
 ##Credits
 
-° Sharon Yelverton was a massive help; she helped explain the thought process I should take when appraching this code
+° https://www.youtube.com/watch?v=9sT03jEwcaw
 ° https://www.w3schools.com/css/css_image_transparency.asp
 ° https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+° https://www.webfx.com/blog/web-design/responsive-background-image/
+
+##Screenshots of completed application
+
+![iPad_passwordgenerator](assets/images/iPad_passwordgenerator.jpg)
 
 
 
